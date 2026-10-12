@@ -1,4 +1,4 @@
-
+```yaml
 name: Playwright API Automation
 
 on:
@@ -25,9 +25,10 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
-        
-      - name: Install Playwright browsers
-        run: npx playwright install --with-deps chromium
 
-      - name: Run Playwright API tests
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps
+
+      - name: Run Playwright tests
         run: npx playwright test
+```
